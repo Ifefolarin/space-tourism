@@ -1,8 +1,8 @@
 .cta {
   display: grid;
   grid-template-columns: 1fr;
-  height: 445px;
-  width: 377px;
+  height: 382px;
+  width: 450px;
 }
 
 .cta h1 {
