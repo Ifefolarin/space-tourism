@@ -1,0 +1,43 @@
+.explore {
+  color: var(--color-dark);
+}
+
+.explore button {
+  border-radius: 50%;
+  border: none;
+  background-color: var(--color-lightest);
+  width: 274px;
+  height: 274px;
+  font-size: 32px;
+  letter-spacing: 2px;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+.explore button:hover {
+  box-shadow: 0px 0px 0px 70px rgba(0, 0, 0, 0.553);
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .explore {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 375px) {
+  .explore {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .explore button {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    letter-spacing: 1.25px;
+  }
+}

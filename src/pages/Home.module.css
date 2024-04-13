@@ -1,0 +1,45 @@
+.home {
+  height: 100vh;
+  background-image: url(/assets/home/background-home-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.homeCta {
+  margin-top: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+  gap: 450px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .home {
+    background-image: url(/assets/home/background-home-tablet.jpg);
+  }
+
+  .homeCta {
+    margin-top: 5rem;
+    display: grid;
+    flex-direction: column;
+    place-items: center;
+    align-items: center;
+    gap: 56px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 375px) {
+  .home {
+    background-image: url(/assets/home/background-home-mobile.jpg);
+  }
+
+  .homeCta {
+    margin-top: -4.5rem;
+    display: grid;
+    flex-direction: column;
+    place-items: center center;
+    align-items: center;
+    gap: 20px;
+  }
+}

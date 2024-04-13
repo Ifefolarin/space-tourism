@@ -1,0 +1,172 @@
+.crew {
+  height: 100vh;
+  background-image: url(/assets/crew/background-crew-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.crews {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.crews img {
+  max-height: 712px;
+}
+
+.crewInfo {
+  margin-top: 120px;
+  left: 165.5px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  top: 500px;
+  color: var(--color-lightest);
+}
+
+.crewInfo h1,
+.crewInfo h2 {
+  text-transform: uppercase;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+}
+
+.crewInfo h2 {
+  font-size: 32px;
+  color: var(--color-light);
+}
+
+.crewInfo h1 {
+  font-size: 56px;
+}
+
+.crewInfo p {
+  font-family: "Barlow", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  width: 444px;
+  color: var(--color-lighter);
+}
+
+.tab {
+  margin-top: 50px;
+  display: flex;
+  gap: 24px;
+}
+
+.tab_button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(75, 71, 71);
+}
+
+.tab_button:hover {
+  background-color: #979797;
+}
+
+.tabButton--active {
+  background-color: var(--color-lightest);
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .crew {
+    background-image: url(/assets/crew/background-crew-tablet.jpg);
+  }
+
+  .crews {
+    margin-top: 0px;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .crews img {
+    max-height: 532px;
+  }
+
+  .tab {
+    margin-top: 40px;
+    gap: 16px;
+  }
+
+  .tab_button {
+    width: 10px;
+    height: 10px;
+  }
+
+  .crewInfo {
+    height: 322px;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .crewInfo h2 {
+    font-size: 24px;
+  }
+
+  .crewInfo h1 {
+    font-size: 40px;
+  }
+
+  .crewInfo p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 300px) {
+  .crew {
+    background-image: url(/assets/crew/background-crew-mobile.jpg);
+  }
+
+  .crews {
+    margin-top: 30px;
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
+
+  .crews img {
+    max-height: 222px;
+  }
+
+  .tab {
+    position: absolute;
+    top: 340px;
+    gap: 16px;
+  }
+
+  .tab_button {
+    width: 10px;
+    height: 10px;
+  }
+
+  .crewInfo {
+    margin-top: 70px;
+    height: 212px;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .crewInfo h2 {
+    font-size: 16px;
+  }
+
+  .crewInfo h1 {
+    font-size: 24px;
+  }
+
+  .crewInfo p {
+    width: 327px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}

@@ -1,0 +1,86 @@
+.cta {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 445px;
+  width: 377px;
+}
+
+.cta h1 {
+  font-size: 150px;
+  color: var(--color-lightest);
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+}
+
+.cta p,
+.cta span {
+  color: var(--color-lighter);
+  font-weight: 400;
+}
+
+.cta p {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 28px;
+  letter-spacing: 4.72px;
+  line-height: auto;
+}
+
+.cta span {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .cta {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    top: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  .cta p {
+    font-size: 20px;
+  }
+
+  .cta span {
+    font-size: 16px;
+    line-height: 28px;
+    width: 444px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 375px) {
+  .cta {
+    width: 327px;
+    position: relative;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .cta h1 {
+    font-size: 80px;
+  }
+
+  .cta p {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+
+  .cta span {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}

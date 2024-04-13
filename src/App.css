@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap");
+:root {
+  --color-dark: #0b0d17;
+  --color-lightest: #ffff;
+  --color-lighter: #d0d6f9;
+  --color-light: #979797;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.subHeader {
+  display: flex;
+  gap: 24px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 4.72px;
+  position: absolute;
+  text-transform: uppercase;
+  left: 166.5px;
+  top: 212px;
+}
+
+.subHeader p {
+  color: var(--color-lightest);
+}
+
+.subHeader span {
+  color: var(--color-light);
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .subHeader {
+    gap: 16px;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+    left: 38.5px;
+    top: 136px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 300px) {
+  .subHeader {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 0px;
+    left: 0px;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    gap: 18px;
+  }
+}
